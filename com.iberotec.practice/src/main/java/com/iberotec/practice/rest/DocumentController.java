@@ -17,6 +17,6 @@ public class DocumentController {
 	
 	@GetMapping("/index")
 	public String index(){
-		return "HI bladimir i am here";
+		return "Hi i am SPRING BOOT";
 	}
 }
