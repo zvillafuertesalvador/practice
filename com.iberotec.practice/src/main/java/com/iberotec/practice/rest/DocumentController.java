@@ -17,6 +17,6 @@ public class DocumentController {
 	
 	@GetMapping("/index")
 	public String index(){
-		return "HIs bladimir";
+		return "HI bladimir";
 	}
 }
