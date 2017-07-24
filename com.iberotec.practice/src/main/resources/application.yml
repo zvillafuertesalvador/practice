@@ -1,0 +1,23 @@
+server:
+  port: 8282
+  servlet:
+    context-path: /restipp
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: iberotec_programas
+    password: 7u3r4$#.2eEr$2
+    url: jdbc:sqlserver://172.16.192.67;instanceName=PSOFT;allowMultiQueries=true
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    show-sql: false
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update #none  
+    properties:
+      hibernate:
+        default_schema: dbo
+        default_catalog: IBEROPPP
+        generate_statistics: false

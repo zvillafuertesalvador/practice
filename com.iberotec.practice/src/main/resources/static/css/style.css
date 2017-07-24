@@ -1,0 +1,47 @@
+.fila-a > .columna{
+    background-color: #027d7d;
+    color: wheat;
+}
+
+body{
+    background-image: url("../img/FONT-FINAL.png")
+}
+.jqx-icon-arrow-down, .jqx-icon-arrow-down-hover, .jqx-icon-arrow-down-selected {
+    margin-right:10px;
+    background-image: url('../img/arrows.png');
+}
+.jqx-icon-arrow-up-selected {
+    margin-right:10px;
+    background-image: url('../img/arrows(2).png');
+}
+
+.loadPage {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/load.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .loadPage {
+    display: block;
+}
+
+label.error {
+    color: #cc5965;
+    display: inline-block;
+    margin-left: 5px;
+}
+.form-control.error {
+    border: 1px dotted #cc5965;
+}
